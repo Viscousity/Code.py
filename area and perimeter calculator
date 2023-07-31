@@ -1,0 +1,83 @@
+print('Welcome to Area & Perimeter calucator')
+while True:
+  choice = int(input("What to you want to calculate ? \n 1 = Area \n 2 = Perimeter \n :"))
+  if choice == 1 : 
+    area = input('Of which shape do you want to calculate the area \n 1 = Square \n 2 = Rectangle \n 3 = Triangle \n 4 = Cricle \n 4.5 = Circle \"3.14\" \n :')
+    s = choice - float(area)
+  elif choice == 2 :
+    para = input('Of which shape do you want to calculate the perimeter \n 1 = Square \n 2 = Rectangle \n 3 = Triangle \n 4 = Cricle \n 4.5 = Circle \"3.14\" \n :')
+    s = float(para) - choice
+  elif choice > 2:
+    print('Invalid input')
+    break
+  else :
+    z = 7
+  if choice == 1 :
+    if area > "3":
+      r = float(input("Enter the radius : "))
+  if choice == 1 :
+    if area =='3' :
+      b = float(input(' Enter the base of triangle : '))
+      h = float(input(' Enter the hieght of triangle : '))
+  if choice == 1:
+      if area == '1':
+        ss = float(input("Enter the length of one side : "))
+  if choice == 1:
+      if area == '2':
+        l = float(input('Enter the length of rectangle : '))
+        w = float(input('Enter the width of rectangle : '))
+  else:
+      z  = 2
+  if choice == 2:
+      if para == '1':
+         ss = float(input('Enter the length of one side : '))
+  if choice == 2:
+      if para == '2':
+        l = float(input('Enter the length of ractangle : '))
+        w = float(input('Enter the width of the rectangle : '))
+  if choice == 2:
+      if para == '3':
+        s1= float(input(' Enter the Length of side 1  : '))
+        s2= float(input(' Enter the Length of side 2  : '))
+        s3= float(input(' Enter the Length of side 3  : '))
+  if choice == 2:
+      if para > '3':
+        r = float(input('Enter the radius : '))
+  else :
+     z = 3
+  match s :
+  
+    case -1 :
+     print (l * w)
+    case -2:
+      print( 1/2 * b * h)
+    case -3 :
+      print ( 22/7 * r * r)
+    case -3.5 :
+      print(3.14 * r * r)
+    case 1 :
+      print (s1 + s2 + s3)
+    case 2 :
+      print( 2 * 22/7 * r)
+    case 3 :
+      print(2 * 3.14 * r)
+  if choice == 1:
+    if area == "1" :
+      print( ss * ss)
+  if choice == 2:
+    if para == "1" :
+      print ( 4 * ss)
+  if choice == 2 :
+    if para == '2':
+      print( 2 * (l + w))
+  else :
+     print ('Como Estas')
+  cal_again = input('Do you want to calculate again ? y/n : ')
+  if cal_again == 'y':
+    continue
+  elif cal_again == 'n' :
+    print('Exiting the calculater')
+    break
+  else:
+    print('Invalid Input')
+    break
