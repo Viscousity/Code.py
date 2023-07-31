@@ -76,7 +76,7 @@ while True:
   if cal_again == 'y':
     continue
   elif cal_again == 'n' :
-    print('Exiting the calculater')
+    print('Exiting the calculator')
     break
   else:
     print('Invalid Input')
